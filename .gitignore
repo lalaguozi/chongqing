@@ -1,0 +1,42 @@
+# Ignore PyTorch/TensorFlow/etc. run directories (logs, checkpoints, etc.)
+runs/
+
+# Ignore datasets directory (often contains large files)
+datasets/
+
+# --- Optional but Recommended Additions ---
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folders (if created inside the project)
+venv/
+.venv/
+env/
+
+# IDE/Editor specific folders
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files (if generated outside 'runs')
+*.log
+
+# Secrets / Credentials file (IMPORTANT!)
+# Never commit sensitive information
+.env
+config.local.py
+secrets.yaml
+
+# Large model weight files (if stored outside 'runs')
+*.pt
+*.pth
+*.h5
+*.onnx
+*.pb
